@@ -5,7 +5,7 @@ pipeline {
         stage('push') {
             agent any
             steps {
-                sh 'Multiple steps can be declared within a stage'
+                sh "echo 'Multiple steps can be declared within a stage'"
             }
         }
     }
