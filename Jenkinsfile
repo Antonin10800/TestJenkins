@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'php --version'
+                set 'php --version'
+                set 'Multiple steps can be declared within a stage'
             }
         }
     }
