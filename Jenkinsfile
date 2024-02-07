@@ -1,6 +1,6 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { docker { image 'php:8.3.2-alpine3.19' } }
+    agent none
     stages {
         stage('push') {
             steps {
