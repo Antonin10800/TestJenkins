@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('push') {
             steps {
-                set 'php --version'
-                set 'Multiple steps can be declared within a stage'
+                sh 'php --version'
+                sh 'Multiple steps can be declared within a stage'
             }
         }
     }
